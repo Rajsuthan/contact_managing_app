@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #434343;
+  height: 92vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: rgb(214, 214, 214);
+  transition: 0.2s ease;
+}
+
+/* -----------Nav----------- */
+nav {
+  position: fixed;
+  width: 100%;
+  background: #1479EC;
+  display: flex;
+  justify-content: space-around;
+  min-height: 8vh;
+  top:0;
+  
+}
+
+.logo h4{
+  margin-top: 15px;
+  font-size: 22px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  margin: 20px 0px 0px 500px;
+}
+
+.nav-links a {
+  color: white;
+}
+
+/* Background Circles */
+.background-circle {
+  z-index: -1;
+}
+
+.circle1 {
+  position: absolute;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background: #0F9BF1;
+  opacity: 0.08;
+  top: 300px;
+  left: 45px;
+}
+
+.circle2 {
+  position: absolute;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background: #0F9BF1;
+  opacity: 0.08;
+  top: 220px;
+  right: 80px;
+}
+
+.circle3 {
+  position: absolute;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background: #0F9BF1;
+  opacity: 0.08;
+  top: 320px;
+  right: 25px;
+}
+
+.circle4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background: #0F9BF1;
+  opacity: 0.08;
+  top: 900px;
+  left: 100px;
+}
+
+.circle5 {
+  position: absolute;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background: #0F9BF1;
+  opacity: 0.08;
+  top: 1000px;
+  left: 170px;
+}
+
+.circle6 {
+  position: absolute;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background: #0F9BF1;
+  opacity: 0.08;
+  bottom: -600px;
+  right: 30px;
+}
+
+/* -----------Head----------- */
+.head {
+  margin: 115px 0px 0px 0px;
+  text-align: center;
+}
+.aboutme img {
+  width: 16%;
+}
+.aboutme  h1 {
+  color: #1479EC;
+  margin: 10px;
+  font-size: 31px;
+}
+.aboutme p {
+  color: white;
+}
+
+/* -----------Social----------- */
+.social {
+  width: 70%;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: white;
+}
+.youtube {
+  background: #EE2D40;
+  padding: 40px 50px;
+  border-radius: 32px;
+}
+.youtube h3 {
+  font-size: 33px;
+  margin-top: -20px;
+}
+.youtube p {
+  margin-top: 20px;
+}
+.instagram {
+  background: #0F80F1;
+  padding: 40px 50px;
+  border-radius: 32px;
+}
+.instagram h3 {
+  font-size: 33px;
+  margin-top: -20px;
+}
+.instagram p {
+  margin-top: 20px;
+}
+/* -----------Subscribe----------- */
+.subscribe {
+  background: #575757;
+  width: 45%;
+  margin: 160px auto;
+  border-radius: 74px;
+  padding: 40px;
+}
+.subscribe p {
+  font-size: 19px;
+  text-align: center;
+  color: white;
+}
+.subscribe form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 40px 0px;
+}
+.subscribe input {
+  margin: 15px auto;
+  outline: none;
+  border: 3px solid #0F80F1;
+  background: none;
+  color: white;
+  border-radius: 48px;
+  height: 50px;
+  width: 90%;
+  padding: 10px;
+  font-family: 'Montserrat',sans-serif;
+
+}
+.subscribe button {
+  margin: 0px auto;
+  outline: none;
+  border: none;
+  color: white;
+  background: #0F80F1;
+  width: 110px;
+  padding: 10px 35px;
+  border-radius: 24px;
+  font-family: 'Montserrat',sans-serif;
+  cursor: pointer;
+}
+
+.subscribe button:hover {
+  background: rgb(6, 86, 165);
+  transition: 0.3s ease;
+}
+
+/* -----------Footer----------- */
+footer {
+  background: #0F80F1;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  color: white;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+  body {
+    background: red;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin: 20px 0px 0px 200px;
+  }
+
+  .aboutme img {
+    width: 22%;
+  }
+
+  .social {
+    width: 90%;
+  }
+
+  .subscribe {
+    background: #575757;
+    width: 60%;
+    margin: 160px auto;
+    border-radius: 74px;
+    padding: 40px;
+  }
+
+  .background-circle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background: coral;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: 20px 0px 0px 100px;
+  }
+
+  .aboutme img {
+    width: 30%;
+  }
+
+  .social {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .youtube, .instagram {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background: black;
+  }
+
+  .aboutme img {
+    width: 40%;
+  }
+
+  .aboutme p {
+    font-size: 14px;
+  }
+
+  .nav-links {
+    width: 50%;
+    margin: 20px 0px 0px 10px;    
+  }
+
+  .subscribe {
+    width: 90%;
+  }
+
+  .social {
+    width: 70%;
+  }
+}
